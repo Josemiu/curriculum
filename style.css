@@ -54,14 +54,14 @@ body {
 
 header h1 {
     background-color: #34495e;
-    font-size: 2em; /* Reduce un poco el tamaño del título */
-    margin: 0; /* Elimina el margen predeterminado del h1 */
+    font-size: 2em; 
+    margin: 0; 
 }
 
 header {
     background-color: #34495e;
     padding: 1em;
-    text-align: center; /* Centra el texto en general */
+    text-align: center; 
 }
 
 nav ul {
