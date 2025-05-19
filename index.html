@@ -12,33 +12,34 @@
 
 <body>
     <header>
-        <div class="header-content">
-            <div class="header-left">
+         <section class="header-content">
+            <section class="header-left">
                 <h1>José Miguel Delgado</h1>
                 <h2>Curriculum Vitae</h2>
-            </div>
-            <div class="header-right">
-                <img src="foto.jpg" alt="Foto de José Miguel Delgado" class="profile-pic">
-            </div>
-        </div>
+            </section>
+            <section class="header-right">
+                <img src="multimedia/foto.jpg" alt="Foto de perfil" class="profile-pic">
+            </section>
+        </section>
         <nav>
             <ul>
                 <li><a href="#perfil" class="nav-btn">Perfil</a></li>
                 <li><a href="#educacion" class="nav-btn">Educación</a></li>
                 <li><a href="#habilidades" class="nav-btn">Habilidades</a></li>
-                <li><a href="#contacto e Información Personal" class="nav-btn">Contacto</a></li>
+                <li><a href="#contacto" class="nav-btn">Contacto</a></li>
                 <li><a href="#voluntariado" class="nav-btn">Voluntariado</a></li>
+                <li><a href="#referencias" class="nav-btn">Referencias</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="perfil">
+        <section id="perfil" class="section">
             <h2>Perfil</h2>
             <p>Estudiante de Ingeniería en Computación con experiencia en programación, análisis de datos y diseño de interfaces. Apasionado por la tecnología, con habilidades en desarrollo de software, redes y automatización. Capacidad para trabajar en equipo, resolver problemas y aprender nuevas tecnologías. Disponible para prácticas profesionales o posiciones en el área de tecnología y computación.</p>
         </section>
 
-        <section id="educacion">
+        <section id="educacion" class="section">
             <h2>Educación</h2>
             <p>
                 <ul class="lista-guiones">
@@ -48,18 +49,53 @@
                 </ul>
             </p>
 
-            <h2>Cursos y Certificaciones</h2>
-            <p>
-                <ul class="lista-guiones">
-                <li>CCNAv7: Introducción a Redes - CISCO (2024)</li><br>
-                <li>Diseño de interfaz (UI) esencial - LinkedIn (2023)</li><br>
-                <li>Data Analytics - Universidad Nacional de Córdoba (2022)</li><br>
-                <li>Bootcamp de Python - Pontificia Universidad Javeriana (2021)</li>
-                </ul>
-            </p>
+          
+           <h2>Cursos y Certificaciones</h2>
+<table style="border-collapse: collapse; width: 100%;">
+    <tr>
+        <th>Certificación</th>
+        <th>Institución</th>
+        <th>Año</th>
+    </tr>
+    <tr>
+        <td>CCNAv7: Introducción a Redes</td>
+        <td>CISCO</td>
+        <td>2024</td>
+    </tr>
+    <tr>
+        <td>Diseño de interfaz (UI) esencial</td>
+        <td>LinkedIn</td>
+        <td>2023</td>
+    </tr>
+    <tr>
+        <td>Data Analytics</td>
+        <td>Universidad Nacional de Córdoba</td>
+        <td>2022</td>
+    </tr>
+    <tr>
+        <td>Bootcamp de Python</td>
+        <td>Pontificia Universidad Javeriana</td>
+        <td>2021</td>
+    </tr>
+</table>
+           <section class="extra-info">
+    <p>
+        Visita el sitio web oficial de la <a href="https://www.espol.edu.ec" target="_blank">Escuela Superior Politécnica del Litoral</a> para más información.
+    </p>
+
+    <h3>Pasos para postular a una práctica profesional</h3>
+    <ol>
+        <li>Revisar los requisitos en la página oficial</li>
+        <li>Preparar tu currículum actualizado</li>
+        <li>Enviar tu solicitud y documentos</li>
+    </ol>
+
+  
+   
+</section> 
         </section>
 
-        <section id="habilidades">
+        <section id="habilidades" class="section">
             <h2>Habilidades</h2>
             <p>
                 <b>Técnicas:</b><ul class="lista-guiones">
@@ -69,14 +105,18 @@
             </ul>
     </p>
             <p>
-                <b>Idiomas:</b> Español (Nativo), Inglés (Avanzado - Hablado y escrito 100%), Francés (Nivel A2)
+                <b>Idiomas:</b> Español (Nativo), Inglés (Avanzado - Hablado y escrito 100%), Francés (Nivel A2).
             </p>
             <p>
                 <b>Personales:</b> Facilidad en la comunicación y relación con personas, creo en el trabajo en equipo entendiendo que cada ser humano tiene diferentes capacidades y habilidades personales, en la innovación permanente y la importancia de que todos los colaboradores sumen su experiencia y se involucren en los objetivos de la organización con cuidado en los detalles.
             </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IV0Cs5wlycY" 
+        title="Video de habilidades" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+    </iframe>
         </section>
 
-        <section id="contacto e Información Personal">
+        <section id="contacto" class="section">
             <h2>Contacto e Información Personal</h2>
             <p>
                
@@ -87,15 +127,139 @@
                 <b>Estado Civil:</b> Soltero<br>
                 <b>Nacionalidad:</b> Ecuatoriana
             </p>
+            <section class="form-container">
+                <h3>Formulario de Contacto</h3>
+                <form id="contactForm" action="#" method="POST">
+                    <section class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required>
+                    </section>
+                    
+                    <section class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+                    </section>
+                    
+                    <section class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ej: (593)995766400" required>
+                    </section>
+                   
+
+<section class="form-group">
+    <label>Prefiere ser contactado por:</label>
+    <section class="radio-group" style="display: flex; gap: 16px; margin-top: 8px;">
+        <label>
+            <input type="radio" id="preferencia_email" name="preferencia_contacto" value="email" required>
+            Email
+        </label>
+        <label>
+            <input type="radio" id="preferencia_telefono" name="preferencia_contacto" value="telefono" required>
+            Teléfono
+        </label>
+    </section>
+</section>
+
+<section class="form-group">
+    <label for="intereses">Intereses:</label>
+    <section class="checkbox-group" style="display: flex; gap: 16px; margin-top: 8px;">
+        <label>
+            <input type="checkbox" id="interes_programacion" name="intereses" value="programacion" required>
+            Programación
+        </label>
+        <label>
+            <input type="checkbox" id="interes_redes" name="intereses" value="redes" required>
+            Redes
+        </label>
+        <label>
+            <input type="checkbox" id="interes_datos" name="intereses" value="datos" required>
+            Análisis de datos
+        </label>
+    </section>
+</section>
+</section>
+
+                    <section class="form-group">
+                        <label for="asunto">Asunto:</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="" disabled selected>Seleccione un asunto</option>
+                            <option value="trabajo">Oportunidad laboral</option>
+                            <option value="practica">Práctica profesional</option>
+                            <option value="proyecto">Propuesta de proyecto</option>
+                            <option value="informacion">Solicitud de información</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </section>
+                    
+                    <section class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje aquí..." required></textarea>
+                    </section>
+                    
+                    
+                    <button type="submit" class="submit-btn">Enviar mensaje</button>
+                </form>
+            </section>
+            
+<section class="mapa-espol">
+    <h3>Ubicación: Escuela Superior Politécnica del Litoral</h3>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.0513472356113!2d-79.9677357304697!3d-2.147934799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d2b6e6e3f3b%3A0x2e2f6e2b6e6e3f3b!2sEscuela%20Superior%20Politécnica%20del%20Litoral!5e0!3m2!1ses!2sec!4v1716134400000!5m2!1ses!2sec" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</section>
+</section>
         </section>
 
-          <section id="voluntariado">
+          <section id="voluntariado" class="section">
             <h2>Actividades y Voluntariado</h2>
             <p>
                 Club Rotaract de Samborondón: Participación en actividades de labor social<br>
                 Deportista de alto rendimiento: Seleccionado de Básquet de Guayas y Ecuador (FEB y Fedeguayas)
             </p>
         </section>
+        
+<section id="referencias" class="section">
+    <h2>Referencias</h2>
+
+    <section class="testimonio">
+        <blockquote>
+            "José Miguel demostró gran responsabilidad y compromiso en cada proyecto que desarrolló en la universidad."
+        </blockquote>
+        <p>
+            <b>Ing. María Fernanda Pérez</b><br>
+            Profesora titular, Escuela Superior Politécnica del Litoral.<br>
+            Supervisó a José Miguel en proyectos de programación y análisis de datos, destacando su capacidad de liderazgo y trabajo en equipo.
+        </p>
+    </section>
+
+    <section class="testimonio">
+        <blockquote>
+            "Su iniciativa y creatividad aportaron soluciones innovadoras en los proyectos de la empresa."
+        </blockquote>
+        <p>
+            <b>Ing. Carlos Ramírez</b><br>
+            Jefe de Proyectos, Empresa TechSolutions.<br>
+            Trabajó con José Miguel en el desarrollo de aplicaciones empresariales, resaltando su profesionalismo y habilidades técnicas.
+        </p>
+    </section>
+
+    <section class="testimonio">
+        <blockquote>
+            "José Miguel es un profesional dedicado, siempre dispuesto a aprender y colaborar con sus compañeros."
+        </blockquote>
+        <p>
+            <b>Mgs. Andrea Torres</b><br>
+            Coordinadora Académica, Universidad Nacional de Córdoba.<br>
+            Coordinó actividades académicas donde José Miguel participó activamente, mostrando compromiso y entusiasmo.
+        </p>
+    </section>
+</section>
     </main>
 
    
