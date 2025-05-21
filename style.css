@@ -1,10 +1,12 @@
-
-body {
+*{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+   
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #ecf0f1; 
+    background-color: #cfd8dc; 
     color: #7f8c8d; 
     text-align: justify;
 }
@@ -86,10 +88,10 @@ main {
 
 .section {
     margin-bottom: 2em;
-    background-color: white;
+    background-color: #f5f7fa;
     padding: 1.5em;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+    box-shadow: 0 4px 8px rgba(167, 62, 62, 0.05); 
 }
 
 h1 {
@@ -102,7 +104,7 @@ h2 {
     font-size: 1.8em;
     border-bottom: 3px solid #34495e;
     padding-bottom: 0.5em;
-    margin-top: 1.5em;
+    margin-top: 0.5em;
     color: #34495e;
 }
 
